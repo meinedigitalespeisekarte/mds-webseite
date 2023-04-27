@@ -19,7 +19,11 @@ function Hero() {
           Preisen, Beschreibungen, Allergenen, etc. vorgenommen werden, ohne
           Dienste externer Dienstleister in Anspruch nehmen zu müssen.
         </p>
-        <a className={styles.HeroLink} href="">
+        <a
+          className={styles.HeroLink}
+          href="mailto:mds@revice-media.com"
+          target="_blank"
+        >
           Angebot einholen
         </a>
       </div>

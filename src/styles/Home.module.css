@@ -1,0 +1,274 @@
+.main {
+  font-family: var(--font-mono);
+  color: #3d3d3d;
+  background-color: #fff !important;
+}
+
+/* Generell */
+
+.sectionHeadline {
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+@media screen and (min-width: 800px) {
+  .sectionHeadline {
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+}
+
+.textOrange {
+  color: #f1725e;
+}
+
+/* Navbar */
+
+.navbar {
+  width: 100%;
+  height: auto;
+  padding: 20px 20px;
+  background-color: #fff;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-scroll {
+  width: 100%;
+  height: auto;
+  padding: 20px 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px 0.1px #dedede;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbarButton {
+  all: unset;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Hero */
+
+.Hero {
+  height: auto;
+  padding: 160px 20px 80px 20px;
+  overflow: hidden;
+  background-color: rgb(43, 52, 70);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10vh;
+  user-select: none;
+}
+
+.HeroImage {
+  width: 100%;
+  height: auto;
+}
+
+.HeroTextSection {
+  display: grid;
+  gap: 5vh;
+  color: #fff;
+  text-align: center;
+  align-items: center;
+}
+
+.HeroHeadline {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.HeroParagraph {
+  font-weight: 300;
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+}
+
+.HeroLink {
+  all: unset;
+  width: auto;
+  background-color: #f1725e;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px solid #f1725e;
+}
+
+.HeroLink:hover {
+  background-color: rgb(43, 52, 70);
+  border: 1px solid #f1725e;
+  color: #f1725e;
+}
+
+@media screen and (min-width: 800px) {
+  .Hero {
+    height: auto;
+    padding: 160px 20vw 80px 20vw;
+    grid-template-columns: 1fr 1fr;
+    gap: 10vw;
+    align-items: center;
+  }
+
+  .HeroImage {
+    width: 120%;
+    height: auto;
+  }
+
+  .HeroTextSection {
+    display: grid;
+    gap: 3vh;
+    color: #fff;
+    text-align: left;
+  }
+
+  .HeroLink {
+    all: unset;
+    width: fit-content;
+    background-color: #f1725e;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid #f1725e;
+  }
+}
+
+/* Pricing */
+
+.Pricing {
+  height: auto;
+  padding: 80px 20px 80px 20px;
+  overflow: hidden;
+  user-select: none;
+}
+
+.pricingWrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-bottom: 80px;
+}
+
+@media screen and (min-width: 800px) {
+  .Pricing {
+    height: auto;
+    padding: 80px 20vw 80px 20vw;
+    align-items: center;
+  }
+
+  .pricingWrapper {
+    width: 100%;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.Price {
+  border: 1px solid #dedede;
+  background-color: #fff;
+  /* box-shadow: 0 0 10px 0.1px #dedede; */
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.PriceHeadline {
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.PricePrice {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.PricePriceSpan {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.PriceMap {
+  margin-top: 2rem;
+}
+
+.PriceMapItem {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Footer */
+
+.Footer {
+  width: 100%;
+  height: auto;
+  background-color: #dedede;
+  padding: 80px 20px;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+  user-select: none;
+}
+
+.LinksWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.FooterHeadline {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.FooterContent {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.FooterContentLink {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #f1725e;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.FooterContentLink:hover {
+  padding-left: 0.4rem;
+}
+
+.FooterContentLinkNormal {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #3d3d3d;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.5s;
+  width: 100%;
+}
+
+.FooterContentLinkNormal:hover {
+  padding-left: 0.4rem;
+}
+
+@media screen and (min-width: 800px) {
+  .Footer {
+    height: auto;
+    padding: 80px 20vw 80px 20vw;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+}

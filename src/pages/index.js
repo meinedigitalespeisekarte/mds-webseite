@@ -5,6 +5,7 @@ import Hero from "@/components/Hero/Hero";
 import Nav from "@/components/Navigation/Nav";
 import Pricing from "@/components/Pricing/Pricing";
 import Footer from "@/components/Footer/Footer";
+import NumberDisplay from "@/components/NumberDisplay/NumberDisplay";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <main className={styles.main}>
         <Nav />
         <Hero />
+        <NumberDisplay />
         <Pricing />
         <Footer />
       </main>

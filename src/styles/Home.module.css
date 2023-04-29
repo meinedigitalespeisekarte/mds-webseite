@@ -54,6 +54,18 @@
   all: unset;
   cursor: pointer;
   user-select: none;
+  background-color: #f1725e;
+  padding: 10px 20px;
+  width: auto;
+  border-radius: 0.5rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 0.5rem;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.8rem;
+  cursor: pointer;
 }
 
 /* Hero */
@@ -145,7 +157,7 @@
 
 .Pricing {
   height: auto;
-  padding: 80px 20px 80px 20px;
+  padding: 0 20px 80px 20px;
   overflow: hidden;
   user-select: none;
 }
@@ -161,7 +173,7 @@
 @media screen and (min-width: 800px) {
   .Pricing {
     height: auto;
-    padding: 80px 20vw 80px 20vw;
+    padding: 0 20vw 80px 20vw;
     align-items: center;
   }
 
@@ -213,12 +225,17 @@
 .Footer {
   width: 100%;
   height: auto;
-  background-color: #dedede;
+  background-color: #f3f3f3;
   padding: 80px 20px;
+  user-select: none;
+}
+
+.FooterGrid {
+  width: 100%;
   display: grid;
   gap: 2rem;
   grid-template-columns: 1fr;
-  user-select: none;
+  margin-bottom: 2rem;
 }
 
 .LinksWrapper {
@@ -244,6 +261,7 @@
   text-decoration: none;
   cursor: pointer;
   transition: all 0.5s;
+  width: 100%;
 }
 
 .FooterContentLink:hover {
@@ -264,11 +282,73 @@
   padding-left: 0.4rem;
 }
 
+.SubFooter {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto auto auto;
+  gap: 1rem;
+  padding: 2rem 0 0 0;
+  border-top: 0.5px solid #3d3d3d;
+}
+
 @media screen and (min-width: 800px) {
   .Footer {
     height: auto;
     padding: 80px 20vw 80px 20vw;
+  }
+
+  .FooterGrid {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
   }
+}
+
+.NumberDisplay {
+  height: auto;
+  padding: 80px 20px 80px 20px;
+  background-color: #f3f3f3;
+  overflow: hidden;
+  user-select: none;
+  margin-bottom: 80px;
+}
+
+.NumberWrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5rem;
+}
+
+@media screen and (min-width: 800px) {
+  .NumberDisplay {
+    height: auto;
+    padding: 80px 20vw 80px 20vw;
+    align-items: center;
+  }
+
+  .NumberWrapper {
+    width: 100%;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.NumberItem {
+  display: grid;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+.NumberHeadline {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.NumberParagraph {
+  text-align: center;
+  font-weight: 300;
+  line-height: 1.5rem;
 }
